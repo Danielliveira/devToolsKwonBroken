@@ -33,7 +33,7 @@ namespace KwonLab4
         {
             if (radFlorida.Checked)
             {
-                chkFlightIncluded.Checked=false
+                chkFlightIncluded.Checked = false;
             }
             else if (radCuba.Checked)
             {
@@ -63,7 +63,7 @@ namespace KwonLab4
         //When user open the program 
         private void Form1_Load(object sender, EventArgs e)
         {
-            ResetTrip()
+            ResetTrip();
         }
 
         //when user select Cuba radio button
@@ -93,7 +93,7 @@ namespace KwonLab4
             const int MINPEOPLE = 1;
             const int MAXPEOPLE = 10;
             const double DISCOUNT = 0.10;
-            const string PHONE = "555-1212"
+            const string PHONE = "555-1212";
 
 
 
@@ -106,7 +106,7 @@ namespace KwonLab4
                 txtPeople.SelectAll();
             }
             //will validade if people is out of range 1-10
-            else if (people<5 || people>10)
+            else if (people<1 || people>10)
             {
                 DisplayMsg("People must be between "+ MINPEOPLE +"-"+MAXPEOPLE, "Input Error");
                 txtPeople.Focus();
